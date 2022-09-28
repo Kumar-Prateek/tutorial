@@ -3,14 +3,14 @@ pipeline {
      stages {
         stage("Build") {
             steps {
-                sh "sudo npm install"
-                sh "sudo npm run build"
+                sh "sudo -s npm install"
+                sh "sudo -s npm run build"
             }
         }
         stage("Deploy") {
             steps {
-                sh "sudo rm -rf /var/www/tutorial"
-                sh "sudo cp -r ${WORKSPACE}/build/ /var/www/tutorial/"
+                sh "sudo -s rm -rf /var/www/tutorial"
+                sh "sudo -s cp -r ${WORKSPACE}/build/ /var/www/tutorial/"
             }
         }
     }
