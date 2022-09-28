@@ -10,6 +10,7 @@ const App = () => (
     <div>Language: JavaScript</div>
     <div>CSS: Empty CSS</div>
     <div>Developer: Prateek</div>
+    <div>Deployed on: Jenkins</div>
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
