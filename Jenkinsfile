@@ -3,14 +3,14 @@ pipeline {
      stages {
         stage("Build") {
             steps {
-                sh "sudo -S admin npm install"
-                sh "sudo -S admin npm run build"
+                sh "sudo -auth admin:admin npm install"
+                sh "sudo -auth admin:admin npm run build"
             }
         }
         stage("Deploy") {
             steps {
-                sh "sudo -S admin rm -rf /var/www/tutorial"
-                sh "sudo -S admin cp -r ${WORKSPACE}/build/ /var/www/tutorial/"
+                sh "sudo -auth admin:admin rm -rf /var/www/tutorial"
+                sh "sudo -auth admin:admin cp -r ${WORKSPACE}/build/ /var/www/tutorial/"
             }
         }
     }
