@@ -11,7 +11,7 @@ const App = () => (
     <div>CSS: Empty CSS</div>
     <div>Developer: Prateek</div>
     <div>Deployed on: Jenkins</div>
-    <div>Checking for build folder</div>
+    <div>Checking for build generation post script</div>
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
