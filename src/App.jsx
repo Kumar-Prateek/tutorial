@@ -10,7 +10,7 @@ const App = () => (
     <div>Language: JavaScript</div>
     <div>CSS: Empty CSS</div>
     <div>Developer: Prateek</div>
-    <div>Deployed on: Jenkins</div>
+    <div>Deployed on: Jenkins Locally</div>
     <div>Checking for build generation post script</div>
   </div>
 );
