@@ -10,8 +10,8 @@ const App = () => (
     <div>Language: JavaScript</div>
     <div>CSS: Empty CSS</div>
     <div>Developer: Prateek</div>
-    <div>Deployed on: Jenkins Locally</div>
-    <div>Testing deployment Date 03/11/2022</div>
+    <div>Made change on branch</div>
+    <div>Made change on branch dummy</div>
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
